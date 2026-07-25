@@ -1,0 +1,15 @@
+name: Ground Truth P32-E05
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+permissions: read-all
+jobs:
+  fixture:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - run: agent --mcp-config .mcp.json
+      - uses: example-org/dynamic-action@v1
