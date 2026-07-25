@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ground-truth": {
+      "command": "node",
+      "args": [
+        "tools/mcp.js"
+      ]
+    }
+  }
+}
