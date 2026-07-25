@@ -1,0 +1,10 @@
+id: P32-E05
+repository: aci-gt-p32-load-extension
+visibility: public
+stage: P3
+rule: P3.2
+kind: experiment
+atomic_variable: "workflow 加载 MCP/third-party Action"
+expected_status: REACHABLE
+setup: AUTO_FILES
+configuration_state: COMPLETE
